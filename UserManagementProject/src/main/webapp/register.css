@@ -1,0 +1,43 @@
+@charset "ISO-8859-1";
+
+a:link {
+  color: green;
+  background-color: transparent;
+  text-decoration: none;
+
+    text-align:center;
+}
+
+body{
+
+	background-color:#808000;
+
+	background-size: cover;
+}
+h1{
+	color:#000000;text-align:center;
+}
+h2{
+	color:black;text-align:center;
+}
+table{
+	margin-left:auto;
+	margin-right:auto;
+	background-color:#fffff0;
+}
+
+tR{
+	background-color:#808000;
+	
+}
+tH{
+		background-color:#BDB76B;
+}
+#myVideo {
+	z-index:-1;
+  position: fixed;
+  right: 0;
+  bottom: 0;
+  min-width: 100%; 
+  min-height: 100%;
+}
