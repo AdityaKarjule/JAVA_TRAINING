@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>---Glorious Enterprises---</title>
+    <link href="https://fonts.googleapis.com/css?family=Muli&display=swap" rel="stylesheet">
+    <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
+    <script >
+    function validateUser(){
+    	var username=document.getElementById("uname").value;
+    	if (username=="")
+    	{
+    		document.getElementById("userErr").innerHTML='Username cannot be blank ';
+    		return false;
+
+    	}
+    	var password1=document.getElementById("psw").value;
+    	if (password1=="")
+    	{
+    		document.getElementById("passErr1").innerHTML='Password cannot be blank ';
+    		return false;
+    		}
+    	var EmailAddress=document.getElementById("email").value;
+    	if ( EmailAddress=="")
+    	{
+    		document.getElementById("userErr1").innerHTML='Email cannot be blank ';
+    		return false;
+
+    	}
+    	
+    return true;
+    }
+    </script>
+</head>
+<style>
+
+
+
+body{
+background-image: url("images/pexel.jpg");
+
+}
+</style>
+
+
+
+
+
+
+<body>
+    <div class="header">
+      <h1>Welcome to Glorious Enterprises</h1>    
+    </div>
+      
+    <div class="topnav">
+        <ul>
+       <li><img src="images/GS.jpg" style="float: right; padding-right: 20px; height:50px"></li>
+        
+        <li><a href="index.html">Home</a></li>
+         
+        <li><a href="login.html">Login</a></li>
+        
+        <li><a href="register.html">Register</a></li>
+           
+        </ul>
+      </div>
+      
+      <div class="row">
+        <div class="main">
+          <div class="card">
+            <h2 style="text-align: center;">Enter Your Details</h2>
+            <form>
+            <fieldset>
+        
+                <div class="container">
+                  <label for="uname"><b>Username*</b></label>
+                  <input type="text" placeholder="Enter Username" id="uname">
+             		 <span id ="userErr"></span><br>
+              
+                  <label for="psw"><b>Password*</b></label>
+                  <input type="password" placeholder="Enter Password" required pattern="^(?=.*[a-z])(?=.*[A-Z])(?=.*[0-9])(?=.*[!@#$%^&*_=+-]).{8,24}$"  id="psw" onKeyUp="clearpassErr1()"><br>
+					<span id ="passErr1"></span><br>  
+					            
+                  <label for="email"><b>EmailAddress*</b></label>
+					<input type=email id="email" onKeyUp="clearUserErr()" required><br>
+				<span id ="userErr1"></span><br>  
+                  <label for="city"><b>Select your City :</b></label>
+ 
+					  <select name="City" id="City">
+					    <option value="Pune">PUNE</option>
+					    <option value="Jammu">JAMMU</option>
+					    <option value="Mumbai">MUMBAI</option>
+					    <option value="Agra">AGRA</option>
+					  
+					  </select>
+					  <br><br>
+
+                  
+              
+                  <label for="mobile"><b>Mobile No.</b></label>
+                  	
+                  <input type="tel" placeholder="Enter Mobile Number" name="mobile">
+
+
+                  <button type="submit"value=""onClick='return validateUser()'>Register</button>
+                  
+                  <button type="button"> <a href ="index.html">BACK</a></button>
+                  
+                </div>
+                </fieldset>
+              </form>
+          </div>
+        </div>
+      </div>
+      
+      
+      <div class="footer">
+              <p><div class="container" style="background-color:#808000;"> © 2009 GLORIOUS ENTERPRISES LTD</div></p>
+      </div>          
+</body>
+</html>
