@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+        <h1> Welcome to this static page </h1>
+        <a href='http://localhost:8080/MyServletProject/greet'>click here for greet </a> <br>
+        <a href='http://localhost:8080/MyServletProject/welcome'>click here for welcome </a>
+        
+        <form action="FindCountryFromDatabaseServlet">
+            Select country name 
+            <select name="countryName">
+                <option value="India">India</option>
+                <option value="Pakistan">Pakistan</option>
+                <option value="China">China</option>
+                <option value="England">United Kingdom</option>
+                <option value="America">America</option>
+                
+            </select>
+            <input type=submit name=submit value="Find Capital">
+        </form>
+        <form action="InsertNewCountry">
+        <label for="countryName">Country name</label>
+        <input type = text name = "COUNTRYNAME">
+        <label for="capital">Capital name</label>
+        <input type = text name = "CAPITAL">
+        <label for="primeminsiter">Prime Minister</label>
+        <input type = text name = "PRIMEMINISTER">
+        <label for="population"> Population</label>
+        <input type = text name = "POPULATION">
+        <label for="currency"> Currency</label>
+        <input type = text name = "CURRENCY">
+        
+        <input type=submit name=submit value="add Country">
+        </form>
+        
+        <form action="HappyFromServlet">
+        Enter Username <input type=text>
+        Enter Password <input type=text>
+                <input type=submit>
+        
+        </form>
+</body>
+</html>
+
+
