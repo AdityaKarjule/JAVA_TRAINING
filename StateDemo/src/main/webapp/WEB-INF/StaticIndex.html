@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>STATIC STATE</title>
+</head>
+<body>
+
+<script>
+
+function cityValue()
+{
+       
+        var data1=document.getElementById("state").value;
+       var cityEle = document.getElementById('cities');
+       if(data1=="Maharastra")
+              {
+              let s = "---State---";
+              
+               s += "<option> Select a destination </option>";
+              s += "<option> Pune </option>";
+              s += "<option> Mumbai </option>";
+              s += "<option> Nasik </option>";
+              s += "<option> Sambhaji-Nagar </option>";
+              cityEle.innerHTML = s
+              
+               }
+       if(data1=="Tamilnadu")
+       {
+       let s = "";
+       
+        s += "<option>  Select a destination  </option>";
+       s += "<option> Coimbatore </option>";
+       s += "<option>Chennai </option>";
+       s += "<option> OOTY </option>";
+       s += "<option> Mysore </option>";
+       cityEle.innerHTML = s
+       
+        }
+       if(data1=="Gujarat")
+       {
+       let s = "";
+       
+        s += "<option> Select a destination </option>";
+       s += "<option> Ahemedabad </option>";
+       s += "<option> Surat </option>";
+       s += "<option> Vododara </option>";
+       s += "<option> Rajkot </option>";
+       cityEle.innerHTML = s
+       
+        }
+
+ }
+
+</script>
+<label>----Choose a State----</label>
+<select id="state" onClick="cityValue()">
+
+<option> Select a destination </option>
+<option value="Maharastra" >Maharashtra</option>
+<option value="Gujarat" >Gujrat</option>
+<option value="Tamilnadu">Tamil-Nadu</option>
+
+</select>
+<br>
+<br>
+<br>
+<label>----Choose a City----</label>
+<select id="cities">
+
+</select>
+
+</body>
+</html>
