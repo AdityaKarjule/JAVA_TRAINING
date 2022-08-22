@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Insert title here</title>
+</head>
+
+<script type="text/javascript"
+language="javascript"
+src="http://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js">
+</script>
+<script type="text/javascript" language="javascript">
+
+$(document).ready(
+function()
+{
+	$("p").css("background-color","violet");
+	$("#p1").css("background-color","green");
+	$("#p2").css("background-color","purple");
+	$("#p3").css("background-color","red");
+	$(".pclass").css("background-color","magenta");
+
+/*$("#hideIt").click(
+	function(){
+	$("p").hide(1000);
+}
+);*/
+$("button").click(
+		function(){
+			$("p").toggle(1500);
+		})
+/*$("#showIt").click(
+	function(){
+	$("p").show(1500);
+}
+);*/
+}
+);
+
+
+</script>
+<body>
+
+<p>Paragraph 0</p>
+<p id ="p1">Paragraph 1</p>
+<p id ="p2">Paragraph 2</p>
+<p id ="p3">Paragraph 3</p>
+<p class ="pclass">Paragraph 4</p>
+<p class ="pclass">Paragraph 5</p>
+<button>Toggle the Paragraph</button>
+<button id="hideIt" >Hide</button>
+<button id="showIt">Show</button>
+</body>		
+</html>

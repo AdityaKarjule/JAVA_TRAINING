@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+<head>
+<link rel ="stylesheet" href="Airline.css">
+<meta charset="ISO-8859-1">
+<title>REGISTER</title>
+<h1>---------------Register Here-----------</h1>
+</head>
+<style>
+#userErr,#passErr1,#passErr2{
+color:red;
+}
+</style>
+<script>
+
+
+function validateUser(){
+	var username=document.getElementById("uname").value;
+	if (username=="")
+	{
+		document.getElementById("userErr").innerHTML='username cannot be blank ';
+		return false;
+
+	}
+	var password1=document.getElementById("upass1").value;
+	if (password1=="")
+	{
+		document.getElementById("passErr1").innerHTML='password cannot be blank ';
+		return false;
+		}
+	
+	var password2=document.getElementById("upass2").value;
+	if (password2=="")
+	{
+		document.getElementById("passErr2").innerHTML='Password does not match ';
+	
+		return false;
+
+		}
+	if(!(password1 ==password2))	{
+		alert("Your Password does not match!!");
+		return false;
+	}
+	
+return true;
+}
+function clearUserErr(){document.getElementById("userErr").innerHTML="";}
+function clearpassErr1(){document.getElementById("passErr1").innerHTML="";}
+function clearpassErr2(){document.getElementById("passErr2").innerHTML="";}
+
+</script>
+<center>
+<body>
+<form action="SearchFlight.html">
+Enter Username:<input type=email id="email" onKeyUp="clearUserErr()" required><br>
+<span id ="userErr"></span><br>
+Enter Password:<input type=password required pattern="^(?=.*[a-z])(?=.*[A-Z])(?=.*[0-9])(?=.*[!@#$%^&*_=+-]).{8,24}$"  id="upass1" onKeyUp="clearpassErr1()"><br>
+<span id ="passErr1"></span><br>
+ReEnter Your Password:<input type=password required pattern="^(?=.*[a-z])(?=.*[A-Z])(?=.*[0-9])(?=.*[!@#$%^&*_=+-]).{8,24}$" id="upass2" onKeyUp="clearpassErr2()"><br>
+<span id ="passErr2"></span><br>
+<input type=submit name=submit Register onClick='return validateUser()'>
+</form>
+
+</body>
+</center>
+</html>

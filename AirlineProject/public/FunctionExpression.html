@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Function As Expression</title>
+</head>
+<script >
+function sayHi(){
+alert("Hello");}
+alert(sayHi)
+sayHi();
+
+function greet(){
+alert("Good morning");}
+
+let whatsup1=greet;    let whatsup2=whatsup1;
+
+whatsup1();
+greet();
+whatsup2();
+
+
+let greetTheWorld = function()
+{
+alert("How's Life?blue"); return 500;
+};   
+
+let greetTheWorldAgain= greetTheWorld;
+greetTheWorld();  greetTheWorldAgain(); 
+
+</script>
+<body>
+Before Script----<br>
+-----After Script<br>
+
+</body>
+</html>

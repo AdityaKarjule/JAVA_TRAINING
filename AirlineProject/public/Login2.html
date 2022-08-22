@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Insert title here</title>
+</head>
+<style>
+#userErr,#passErr{
+color:red;
+}
+</style>
+<script
+
+type="text/javascript"
+language="javascript"
+src="Login2.js">
+
+</script>
+<body>
+<form action="SearchFlight.html">
+Enter Username:<input type=text id="uname" onKeyUp="clearUserErr()"><br>
+<span id ="userErr"></span><br>
+Enter Password:<input type=password id="upass" onKeyUp="clearpassErr()"><br>
+<span id ="passErr"></span><br>
+
+<input type=submit name=submit value="Login" onClick='return validateUser()'>
+</form>
+
+</body>
+</html>

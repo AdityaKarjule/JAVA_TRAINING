@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Insert title here</title>
+</head>
+<script>
+console.log('Begin of main...')
+
+try{
+	console.log('==>1Before 5 seconds');
+	setTimeout(
+		function()
+		{
+			try{
+			noSuchVariable;
+			}
+			catch{
+				alert("No such Variable");
+			}
+		},
+	5000);
+	console.log('==>3 After 5 seconds--');
+}
+
+catch(e){
+	alert("wont Work");
+}
+
+console.log('End of main...')
+</script>
+<body>
+
+</body>
+</html>

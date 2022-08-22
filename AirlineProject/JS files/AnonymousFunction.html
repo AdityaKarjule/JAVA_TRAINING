@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Anonymous Function</title>
+</head>
+<script>
+function ask(question,yes,no){
+	if(confirm(question))yes();else no();
+	
+}
+ask("Do you agree?",
+		function agree(){alert("You agreed.");
+			
+		},
+		function disagree(){alert("You cancelled the execution.");
+		}
+		);
+		
+
+ask("Are you sure?",
+function (){alert("You passed.");	
+},
+function notsure(){alert("You stopped.");
+}
+);
+
+
+sayHi("John");
+function sayHi(name){
+	alert(`Hello,${name}`);
+}
+sayHi("Jane");
+sayHi1("How are you?");
+let sayHi1=function(name){
+	alert(`Hello,${name}`);
+};
+sayHi1("How are you 2");
+
+</script>
+<body>
+
+</body>
+</html>

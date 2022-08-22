@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Insert title here</title>
+</head>
+<script>
+try{
+	alert(`Start of try means`);
+	lalala;
+	alert(`End of try (never reached)`);
+	}
+	
+	catch(err)
+	{
+		alert(err.name);
+		alert(err.message);
+		alert(err.stack);
+		
+		alert(err);
+	}
+</script>
+<body>
+
+</body>
+</html>
